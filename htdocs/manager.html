@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Timesheets - Manager</title>
+    <meta name="author" content="Phil Crump">
+    <link href="/lib/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap-datepicker-1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="manager.css" rel="stylesheet">
+    <script src="/lib/jquery-3.4.1.min.js"></script>
+    <script src="/lib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="/lib/moment-2.24.0.min.js"></script>
+    <script src="/lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="manager.js"></script>
+  </head>
+  <body class="bg-light text-center">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Timesheets</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Manager <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+          <button type="button" id="button-logout" class="btn btn-primary btn-sm">Log out</button>
+      </div>
+    </nav>
+
+    <span id="test-message"></span>
+
+      <div id="spinner-pageload" class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+
+      <br>
+      <input id="datepicker-from" class="datepicker"></div> -> <input id="datepicker-to" class="datepicker"></div>
+
+  </body>
+</html>

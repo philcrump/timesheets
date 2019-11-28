@@ -1,0 +1,11 @@
+{
+	"cookie-secret": "52jwiwj2h04q68g39hg4phgvuq9",
+    "email-domain": "@example.com",
+    "postgres-host": "/var/run/postgresql",
+    "postgres-user": "www-data",
+    "postgres-database": "timesheets",
+    "smtp-from": "timesheets@example.com",
+    "smtp-user": "username",
+    "smtp-password": "password",
+    "smtp-host": "host.example.com"
+}

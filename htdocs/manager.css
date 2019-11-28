@@ -1,0 +1,14 @@
+body {
+  padding-top: 4.5rem;
+}
+#spinner-pageload {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.datepicker {
+	display: none;
+}

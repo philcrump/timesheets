@@ -1,0 +1,62 @@
+body {
+  padding-top: 4.5rem;
+}
+#spinner-pageload {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#header-weekpicker {
+  display: inline-block;
+  width: 10rem;
+}
+#table-clockentry {
+    display: none;
+}
+#table-clockentry > table > tbody {
+    display: table;
+    width: 100%;
+}
+#table-clockentry > table > tbody > tr > td {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
+.input-time {
+    width: 100%;
+    max-width: 80px;
+  color: #888888;
+}
+.input-time-nonzero {
+  color: #000000 !important;
+  font-weight: 500 !important;
+}
+.row-project-toplevel > td {
+    border-top: 1px solid #888888;
+    padding-top: 5px;
+}
+.row-day-total > td {
+  text-align: left;
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+.input-day-total {
+  margin-left: 2.5rem;
+    width: 50%;
+    max-width: 80px;
+    text-align: center;
+    background-color: #F8F8F8;
+  color: #686868;
+}
+.input-day-total-nonzero {
+  color: #000000;
+  font-weight: 600;
+}
+#message-saving {
+    display: none;
+    color: white;
+    margin-right: 7px;
+}

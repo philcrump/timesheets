@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Timesheets</title>
+    <meta name="author" content="Phil Crump">
+    <link href="/lib/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap-datetimepicker-4.17.50/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="/lib/jquery-3.4.1.min.js"></script>
+    <script src="/lib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="/lib/moment-2.24.0.min.js"></script>
+    <script src="/lib/moment-duration-format-2.3.2.js"></script>
+    <script src="/lib/bootstrap-input-spinner-1.12.7-pc.js"></script>
+    <script src="/lib/bootstrap-datetimepicker-4.17.50/bootstrap-datetimepicker.min.js"></script>
+    <script src="/lib/bootstrap-weekpicker.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body class="bg-light text-center">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Timesheets</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/manager.html">Manager <span class="sr-only"></span></a>
+          </li>
+        </ul>
+          <div id="message-saving"></div>
+          <button type="button" id="button-logout" class="btn btn-primary btn-sm">Log out</button>
+      </div>
+    </nav>
+
+    <span id="test-message"></span>
+
+      <div id="spinner-pageload" class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+
+  <div id="table-clockentry">
+    <table class="d-flex">
+      <tr>
+        <th>
+          <span id="header-weekpicker"></div>
+        </th>
+        <th>
+          Monday
+          <div id="header-monday-date"></div>
+        </th>
+        <th>
+          Tuesday
+          <div id="header-tuesday-date"></div>
+        </th>
+        <th>
+          Wednesday
+          <div id="header-wednesday-date"></div>
+        </th>
+        <th>
+          Thursday
+          <div id="header-thursday-date"></div>
+        </th>
+        <th>
+          Friday
+          <div id="header-friday-date"></div>
+        </th>
+        <th>
+          Saturday
+          <div id="header-saturday-date"></div>
+        </th>
+        <th>
+          Sunday
+          <div id="header-sunday-date"></div>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+
+  </body>
+</html>
