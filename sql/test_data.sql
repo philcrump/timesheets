@@ -1,10 +1,11 @@
 \c "timesheets";
 
 INSERT INTO users 
-  (id, email, password, type)
+  (id, name, email, password, type)
   VALUES 
   (
     1,
+    'Test Data',
     'test@example.com',
     '$2b$10$YZ8Y./dGtw1sr/FHjX.YJOXuE66kCvgxULoceM0mrCq.9HQI8aeLG', /* "test" */
     'manager'

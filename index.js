@@ -169,6 +169,28 @@ app.post('/api/v1/reset_request', (request, response) => {
   });
 });
 
+app.post('/api/v1/reset_password', (request, response) => {
+  const request_password = request.body.password;
+  const request_resetKey = request.body.resetKey;
+
+  passwordCrypt.cryptPassword(request_password, (error, password_hash) => {
+    if(error) {
+      response.status(500).json({"error": "Server Error"});
+      throw error;
+      return;
+    }
+
+    pgPool.query('UPDATE users SET password = $1, reset_key = NULL WHERE reset_key=$2;', [password_hash, request_resetKey], (error, results) => {
+      if (error) {
+        response.status(500).end();
+        throw error;
+        return;
+      }
+      response.status(200).end();
+    });
+  });
+});
+
 app.get('/api/v1/admin_users', (request, response) => {
   /* Check they're logged in */
   if(request.session.logged_in && request.session.user_type == 'admin') {
